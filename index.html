@@ -1,0 +1,90 @@
+<html>
+<head>
+    <script type="text/javascript">
+        //Load ¨Æ¥ó
+        document.addEventListener("DOMContentLoaded", function (event) {
+            //Post();
+            //SetCodingTypeSelectList();
+            alert("Hi BXtch!");
+        });
+
+        function SetOptionInSelect() {
+
+            const select2 = document.getElementById("select2");
+            const o = document.createElement("option");
+            o.text = "test";
+            o.value = "test";
+            select2.add(o);
+        }
+
+        function SetArrayInSelect() {
+
+            const select3 = document.getElementById("select3");
+            const arr = ["S1", "B1"];
+            for (i = 0; i < arr.length;i++) {
+                const o = document.createElement("option");
+                o.text = arr[i];
+                o.value = arr[i];
+                select3.add(o);
+            }
+
+            document.getb
+        }
+
+        function SetText4() {
+
+            const len = document.getElementsByName("d4").length;
+            document.getElementById("demo4").innerHTML = len;
+        }
+
+        function SetText5() {
+
+            const len = document.getElementsByClassName("d5").length;
+            document.getElementById("demo5").innerHTML = len;
+        }
+
+        function SetText6()
+        {
+            
+        }
+
+    </script>
+</head>
+<body>
+    <h1>What Can JavaScript Do?</h1><br />
+
+    <h3>1.Change Text</h3>
+    <p id="demo1">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("demo1").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+    <br>
+
+    <h3>2.Set Option In Select</h3>
+    <select id="select2"></select>
+    <button type="button" onclick='SetOptionInSelect()'>Click Me!</button>
+    <br>
+
+    <h3>3.Set Array In Select List</h3>
+    <select id="select3"></select>
+    <button type="button" onclick='SetArrayInSelect()'>Click Me!</button>
+    <br>
+
+    <h3>4.GetByClassName</h3>
+    <p id="demo4">JavaScript can change HTML content.</p>
+    <u name="d4"></u>
+    <u name="d4"></u>
+    <button type="button" onclick='SetText4()'>Click Me!</button>
+    <br>
+
+    <h3>5.GetByName</h3>
+    <p id="demo5">JavaScript can change HTML content.</p>
+    <u class="d5"></u>
+    <u class="d5"></u>
+    <button type="button" onclick='SetText5()'>Click Me!</button>
+    <br>
+
+    <h3>6.Set Text Into Input</h3>
+    <input type="text" id="input6" value="" />
+    <button type="button" onclick='document.getElementById("input6").value = "test"'>Click Me!</button>
+    <br>
+</body>
+</html>
